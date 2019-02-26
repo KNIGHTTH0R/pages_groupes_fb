@@ -56,14 +56,16 @@ Par défaut, il doit être placé dans le même dossier que index.php et config.
 
 ### events.json
 Format des objets dans le JSON :<br />
-````{
-"id" : "",
-"start_time" : "",
-"end_time" : "",
-"band_name" : "",
-"place_name" : "",
-"description" : ""
-}````
+````
+{
+  "id" : "",
+  "start_time" : "",
+  "end_time" : "",
+  "band_name" : "",
+  "place_name" : "",
+  "description" : ""
+}
+````
 
 
 
