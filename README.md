@@ -40,13 +40,31 @@ CREATE TABLE `z_agenda` (
 Vous devez ici changer uniquement vos identifiants de connexion à votre base de données MySQL
 
 ### index.php
-Ligne 4 : Vous devez rajouter votre token Facebook
+Ce fichier vous permet de récupérer les informations des évènements de pages et de groupes et de les stocker dans votre Bdd SQL<br />
+
+Ligne 4 : Vous devez rajouter votre token Facebook<br />
 **Remarque : Ce token ne doit pas être temporaire**
 1. Pour cela, rendez-vous sur https://developers.facebook.com/tools/explorer/
 2. Choisissez votre App en haut à droite
 3. Cliquez ensuite sur le petit "I" bleu à côité du token généré
 4. Dans le popup cliquez sur "Ouvrir sur l'outil access token"
 5. En bas de la page, cliquez sur "Etendre le token d'accès"
+
+### generate_json.php
+Ligne 39 : Renseignez l'adresse relative de votre fichier events.json<br />
+Par défaut, il doit être placé dans le même dossier que index.php et config.php
+
+### events.json
+Format des objets dans le JSON :<br />
+````{
+"id" : "",
+"start_time" : "",
+"end_time" : "",
+"band_name" : "",
+"place_name" : "",
+"description" : ""
+}````
+
 
 
 
