@@ -33,5 +33,21 @@ CREATE TABLE `z_agenda` (
 `ag_idfb` varchar(50) NOT NULL // ID event Facebook 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ````
-__Remarque : La colonne ag_id doit être PRIMAIRE et vous devez ajouter l'Auto INCREMENT !!! Attention
+**Remarque : La colonne ag_id doit être PRIMAIRE et vous devez ajouter l'Auto INCREMENT !!! Attention**
+
+## Configuration des Scripts :
+### config.php
+Vous devez ici changer uniquement vos identifiants de connexion à votre base de données MySQL
+
+### index.php
+Ligne 4 : Vous devez rajouter votre token Facebook
+**Remarque : Ce token ne doit pas être temporaire**
+1. Pour cela, rendez-vous sur https://developers.facebook.com/tools/explorer/
+2. Choisissez votre App en haut à droite
+3. Cliquez ensuite sur le petit "I" bleu à côité du token généré
+4. Dans le popup cliquez sur "Ouvrir sur l'outil access token"
+5. En bas de la page, cliquez sur "Etendre le token d'accès"
+
+
+
 
